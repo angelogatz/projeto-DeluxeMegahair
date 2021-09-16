@@ -224,6 +224,8 @@ header {
     .parallax__text{
         width: 750px;
     }
+
+    
 }
 
 
@@ -264,6 +266,58 @@ header {
 
 .home__scroll-arrow{
   font-size: 1.25rem;
+}
+
+/*================================== SOCIAL-ICONS ========================================*/
+
+.home__social{
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+  margin-top: 320px;
+
+}
+
+.home__social-icon{
+  font-size: 1.25rem;
+  color: white;
+  margin-left: -270px;
+}
+
+.home__social-icon:hover{
+  color: #1e1e1e;
+}
+
+@media screen and (min-width: 568px){
+  .home__social{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+    margin-top: 320px;
+    
+  }
+  
+  .home__social-icon{
+    font-size: 1.25rem;
+    color: white;
+    margin-left: -545px;
+  }
+}
+
+@media screen and (min-width: 800px){
+  .home__social{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+    margin-top: 380px;
+    
+  }
+  
+  .home__social-icon{
+    font-size: 1.25rem;
+    color: white;
+    margin-left: -745px;
+  }
 }
 
 /*================================== SOBRE ========================================*/
@@ -316,4 +370,16 @@ header {
     width: 75%;
     height: 400px;
   }
+}
+
+/*================================== SOBRE/PAINEL ========================================*/
+
+.painel{
+  background-color: #1e1e1e;
+  width: 100%;
+  height: 500px;
+}
+
+.painel__content{
+
 }
