@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
+
 *{
 
     box-sizing: border-box;
@@ -260,3 +266,28 @@ header {
   font-size: 1.25rem;
 }
 
+/*================================== SOBRE ========================================*/
+
+.sobre__title{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  color: black;
+  font-size: 42px;
+  text-decoration: none;
+  line-height: 1.25;
+}
+
+.sobre__subtitle{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  color: black;
+  font-size: 22px;
+}
+
+.sobre__videoplayer{
+  
+  align-self: center;
+  width: 100%;
+  height: 200px;
+}
