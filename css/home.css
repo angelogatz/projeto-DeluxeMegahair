@@ -291,3 +291,29 @@ header {
   width: 100%;
   height: 200px;
 }
+
+@media screen and (min-width: 800px){
+  .sobre__title{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    color: black;
+    font-size: 72px;
+    text-decoration: none;
+    line-height: 1.25;
+  }
+  
+  .sobre__subtitle{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
+    color: black;
+    font-size: 2.5rem;
+  }
+  
+  .sobre__videoplayer{
+    
+    align-self: center;
+    width: 75%;
+    height: 400px;
+  }
+}
