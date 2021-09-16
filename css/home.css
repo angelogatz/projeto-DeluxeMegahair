@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+*{
+
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    margin: 0;
+}
+
+
+/*================================== NAVBAR ========================================*/
+
+header {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .toggler {
+    display: none;
+  }
+  
+  
+  
+  .logo {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    margin-left: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    padding: 16px;
+    background: #00000052;
+    left: -100%;
+    transition: all .5s;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-bottom: 16px;
+    margin-left: 16px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(31, 31, 31, 0.658);
+    text-transform: uppercase;
+    
+  }
+  
+  nav a:hover {
+    color: rgb(91, 180, 253);
+    transition: ease-in .1s;
+  }
+  
+  .toggler:checked ~ nav ul {
+    left: 0;
+  }
+  
+  .burger {
+    position: absolute;
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(31, 31, 31);
+    top: 0;
+    right: 0;
+    margin-right: 16px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .toggler:checked ~ nav a {
+    opacity: 1;
+  }
+  
+  
+  /* Desktop Screen Format */
+  
+  @media screen and (min-width: 800px) {
+    .burger {
+      display: none;
+    }
+  
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto minmax(700px, 3fr);
+    }
+  
+    nav {
+      
+      display: flex;
+      grid-column: 3/4;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  
+    nav ul {
+      all: unset;
+      list-style: none;
+      display: flex;
+      
+    }
+  
+    nav li {
+      margin-bottom: 0;
+      margin-right: 16px;
+      
+    }
+  
+    nav a {
+      opacity: 1;
+    }
+  
+  }
+
+
+
+
+
+/*================================== PARALLAX E SCROLL-REVEAL ========================================*/
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.headline{
+    font-size: 15rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1;
+    font-weight: 100;
+}
+
+.text-wrapper{
+    text-align: center;
+}
+
+.headline::first-letter{
+    font-size: 20rem;
+}
+
+.sub-headline{
+    font-size: 10rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.parallax{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overflow{
+    height: 200vh;
+}
+
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.parallax__text{
+    width: 270px;
+}
+
+
+
+@media screen and (min-width: 568px){
+  .parallax__text{
+    width: 550px;
+  }  
+
+  
+}
+
+@media screen and (max-width: 568px){
+  .home__scroll-button{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px){
+    .parallax__text{
+        width: 750px;
+    }
+}
+
+
+
+
+
+.scrolling-active{
+  background-color: rgba(0, 0, 0, 0.726);
+  box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.445);
+  transition: .5s ease-in-out;
+}
+
+
+
+
+.home__scroll-button{
+  color: white;
+  margin-top: 450px;
+  margin-left: -150px;
+}
+
+.home__scroll-button:hover{
+  transform: translateY(.25rem);
+  color: rgb(184, 184, 184);
+  transition: .5s;
+}
+
+.home__scroll-mouse{
+  font-size: 2rem;
+}
+
+.home__scroll-name{
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  margin-right: var(--mb-0-25);
+}
+
+.home__scroll-arrow{
+  font-size: 1.25rem;
+}
+
