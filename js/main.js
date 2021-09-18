@@ -28,6 +28,46 @@ function reveal(){
     }
 }
 
+window.addEventListener('load', reveal_social);
+
+function reveal_social(){
+    var reveals = document.querySelectorAll('.reveal_social');
+
+    for(var i = 0; i < reveals.length; i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+
+
+window.addEventListener('scroll', reveal_content);
+
+function reveal_content(){
+    var reveals = document.querySelectorAll('.reveal_content');
+
+    for(var i = 0; i < reveals.length; i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+
+
 /*---------------- srcoll reveal content ------------------*/
         
 window.addEventListener('scroll', function () {

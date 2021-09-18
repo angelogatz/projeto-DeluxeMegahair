@@ -18,6 +18,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     margin: 0;
+    overflow-x: hidden;
 }
 
 
@@ -288,17 +289,25 @@ header {
   color: white;
   margin-top: 450px;
   margin-left: -150px;
+  transition: .5s;
+  text-decoration: none;
 }
 
 .home__scroll-button:hover{
   transform: translateY(.25rem);
-  color: rgb(184, 184, 184);
+  color: rgb(133, 133, 133);
   transition: .5s;
 }
 
 .home__scroll-mouse{
   font-size: 2rem;
 }
+
+
+.home__scroll-name{
+  text-decoration: none;
+}
+
 
 
 
@@ -321,10 +330,14 @@ header {
   color: white;
   margin-left: -270px;
   width: 20px;
+  transition: .5s;
+
 }
 
 .home__social-icon:hover{
   color: #838383;
+  transition: .5s;
+
 }
 
 @media screen and (min-width: 568px){
@@ -357,6 +370,19 @@ header {
     color: white;
     margin-left: -745px;
   }
+}
+
+
+.reveal_social{
+  position: relative;
+  transform: translateY(-150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal_social.active{
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 /*================================== SOBRE ========================================*/
@@ -566,6 +592,24 @@ header {
 }
 
 
+/*================================== reveal-sobre ========================================*/
+
+.reveal_content{
+  position: relative;
+  transform: translateX(55px);
+  opacity: 0;
+  transition: all 1s ease;
+  overflow: hidden;
+}
+
+.reveal_content.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+
+
 
 
 /*================================== SCROLL-BAR WK ========================================*/
@@ -758,5 +802,294 @@ header {
     transform: scale(1.1);
     transition: .5s ease;
   }
+
+  .button__icon{
+    font-size: 1.25rem;
+    transition: .3s;
+  }
 }
 
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+    
+}
+.button{
+  display: inline-block;
+  background-color: #929292;
+  color: black;
+  padding: .5rem;
+  border-radius: .5rem;
+  font-weight: 500;
+  margin-left: 600px;
+  text-decoration: none;
+  box-shadow: 1px 3px 5px #1e1e1e;
+}
+
+.button:hover{
+  
+  color: #FFF;
+}
+
+
+/*================================== contato ========================================*/
+
+.info{
+  display: grid;
+  grid-template-columns: 3fr;
+}
+
+.info a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.barra__sup{
+  width: 100%;
+  background-color: #ffffff;
+  height: 50px;
+}
+
+.barra__inf{
+  color: rgb(0, 0, 0);
+  display: inline-flex;
+  
+  width: 100%;
+  background-color: #cccccc69;
+  height: 50px;
+
+}
+
+.info__links{
+  margin-left: 90px;
+  transform: translateY(-80px);
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+.info__link{
+  font-size: 44px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.info_sub-title{
+  font-family: 'Work Sans', sans-serif;
+  
+  
+}
+
+
+/*================================== contato ========================================*/
+
+.footer__link{
+  text-decoration: none;
+}
+
+
+.container{
+  max-width: 768px;
+  margin-right: 1.5rem;
+}
+
+.grid{
+  display: grid;
+  gap: 1.5rem;
+}
+
+
+.footer{
+  padding-top: 2rem;
+}
+
+.footer__container{
+  row-gap: 3.5rem;
+}
+
+.footer__bg{
+  background-color: #1e1e1e;
+  padding: 2rem 0 3rem;
+}
+
+.footer__title{
+  
+  margin-bottom: .25rem;
+}
+
+.footer__subtitle{
+  font-size: 15px;
+}
+
+.footer__links{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.footer__link{
+  color: black;
+  margin-left: -24px;
+}
+
+.footer__link:hover{
+
+  color: #535353;
+}
+
+.footer__social{
+  font-size: 1.25rem;
+  margin-right: 1.5rem;
+}
+
+.footer__social:hover{
+  color: #535353;
+}
+
+.footer__title,
+.footer__subtitle,
+.footer__link,
+.footer__social{
+  color: #FFF;
+}
+
+
+@media screen and (min-width: 200px){
+
+  .barra__inf{
+    display: grid;
+    grid-template-columns: 2fr;
+    height: 400px;
+  }
+
+  .info__links{
+    display: grid;
+    margin-left: -10px;
+    transform: translateY(-80px);
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -30px;
+  }
+  
+  .info__link{
+    font-size: 44px;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+
+  .barra__sup{
+    height: 80px;
+  }
+  
+
+
+  .button{
+    display: inline-block;
+    background-color: #929292;
+    color: black;
+    padding: .5rem;
+    border-radius: .5rem;
+    font-weight: 500;
+    margin-left: 100px;
+    text-decoration: none;
+    box-shadow: 1px 3px 5px #1e1e1e;
+  }
+  body{
+    overflow-x: hidden;
+  }
+
+  
+
+
+
+}
+
+
+
+@media screen and (min-width: 568px){
+
+  .footer__container{
+    grid-template-columns: repeat(2, 1fr);
+}
+body{
+  overflow-x: hidden;
+}
+
+}
+
+
+
+@media screen and (min-width: 768px){
+  .footer__container{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__bg{
+    padding: 3rem 0 3.5rem;
+}
+
+.footer__links{
+    flex-direction: column;
+    column-gap: 5rem;
+    text-decoration: none;
+}
+
+.footer__socials{
+    justify-self: flex-end;
+}
+body{
+  overflow-x: hidden;
+}
+
+}
+
+
+@media screen and (min-width: 1024px){
+  .footer__container{
+    padding: 0;
+}
+
+.footer__container{
+    height: 5rem;
+}
+
+.footer{
+    transform: translateY(2.92rem);
+}
+.barra__sup{
+  width: 100%;
+  background-color: #ffffff;
+  height: 80px;
+}
+
+.barra__inf{
+  color: rgb(0, 0, 0);
+  display: inline-flex;
+  
+  width: 100%;
+  background-color: #cccccc69;
+  height: 80px;
+
+}
+
+.info__links{
+  margin-left: 90px;
+  transform: translateY(-30px);
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+.info__link{
+  font-size: 44px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+}
