@@ -165,6 +165,81 @@ img{
     margin-right: var(--mb-1-5);
 }
 
+
+
+@media screen and (min-width: 200px){
+
+    .videos{
+       width: 100%;
+       padding: auto;
+    }
+
+
+
+    .videos__content{
+        padding: 10px;
+    }
+
+    .videos__title{
+        font-size: 2rem;
+        font-family: 'Work Sans', sans-serif;
+        
+    }
+    
+
+    .videos__subtitle{
+        font-size: 1.5rem;
+    }
+
+    .yt{
+        width: 100%;
+    }
+
+    .lead-adjust{
+        padding: 0;
+        font-size: 15px;
+    }
+}
+
+
+
+@media screen and (min-width: 368px){
+
+    .yt{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 40px;
+    }
+
+    
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1366px){
+
+    .yt{
+        width: 450px;
+        padding: 20px;
+        height: 350px;
+        margin-bottom: 40px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .yt{
+        width: 650px;
+        padding: 20px;
+        height: 350px;
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
+
+
 @media screen and (min-width: 768px){
 
     .container{
@@ -179,23 +254,88 @@ img{
     }
     
     .main{
-        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
-    
-
-   
 
     .portfolio__img{
-        width: 320px;
+        width: 420px;
+        
     }
 
     .portfolio__content{
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .videos__content{
+        display: grid;
+        margin: 0;
+        padding: 58px;
+        width: 100%;
+    }
+
+    .videos__title{
+        font-size: 3rem;
+        font-family: 'Work Sans', sans-serif;
+        margin-top: 100px;
+    }
+    .container_vd{
+        margin-left: 50px;
+    }
+
+
+    .yt{
+        width: 450px;
+        padding: 20px;
+        height: 300px;
+        margin-bottom: 40px;
+    }
+
+    
+
 }
 
 
-.overflow{
-    height: 600px;
+@media screen and (min-width: 1024px){
+  
+    .video__link{
+        width: 100%;
+    }
+    
+    .videos__content{
+        display: inline;
+        
+
+        padding: 58px;
+        width: auto;
+    }
+    
+    .videos__title{
+        font-size: 3rem;
+        font-family: 'Work Sans', sans-serif;
+        margin-top: 200px;
+    }
+    
+    .videos__subtitle{
+        font-size: 2rem;
+    }
+    
+    
+    .container_vd{
+        margin-left: 80px;
+    }
+
+    .yt{
+        width: 610px;
+        padding: 20px;
+        height: 350px;
+        margin-bottom: 40px;
+    }
 }
+
+
+
+
+
+
+
