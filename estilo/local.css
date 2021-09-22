@@ -28,6 +28,10 @@ html{
     max-width: 700px;
 }
 
+.parallax__text{
+    margin-top: 120px;
+}
+
 .waze-frame{
     width: 100%;
     margin-left: auto;
