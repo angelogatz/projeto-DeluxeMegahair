@@ -331,6 +331,11 @@ img{
         height: 350px;
         margin-bottom: 40px;
     }
+
+    .box-ajust{
+        display: inline-flex;
+        width: 100%;
+    }
 }
 
 
