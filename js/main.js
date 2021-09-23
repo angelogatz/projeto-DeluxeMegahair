@@ -88,6 +88,7 @@ let swiper = new Swiper('.portfolio__container', {
     pagination: {
         el: 'swiper-pagination'
     },
+    autoplay: true,
     mousewheel: true,
     keyboard: true,
 });
