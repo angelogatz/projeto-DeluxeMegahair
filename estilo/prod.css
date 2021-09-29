@@ -182,7 +182,8 @@ img{
 
     .videos__title{
         font-size: 2rem;
-        font-family: 'Work Sans', sans-serif;
+        font-weight: 400;
+        font-family: 'Josefin Sans', sans-serif;
         
     }
     
@@ -199,15 +200,21 @@ img{
 
     .container_vd{
         margin-left: 50px;
+        font-weight: 300;
+        font-family: 'Josefin Sans', sans-serif;
         
     }
 
     .videos__title{
         font-size: 3rem;
-        font-family: 'Work Sans', sans-serif;
+        font-weight: 400;
+        font-family: 'Josefin Sans', sans-serif;
         margin-top: 100px;
         
     }
+
+    
+    
 
     
 }
@@ -222,6 +229,14 @@ img{
         margin-bottom: 40px;
     }
 
+    .container_vd{
+        font-weight: 300;
+        font-family: 'Josefin Sans', sans-serif;
+        
+    }
+    .lead-adjust{
+        font-size: 20px;
+    }
     
 }
 
@@ -234,6 +249,11 @@ img{
         padding: 20px;
         height: 300px;
         margin-bottom: 40px;
+    }
+    .container_vd{
+        font-weight: 300;
+        font-family: 'Josefin Sans', sans-serif;
+        
     }
 }
 
@@ -259,13 +279,11 @@ img{
     }
 
     .portfolio__img{
-        width: 420px;
+        width: 320px;
         
     }
 
-    .portfolio__content{
-        grid-template-columns: repeat(1, 1fr);
-    }
+    
 
     .videos__content{
         display: grid;
@@ -276,14 +294,22 @@ img{
 
     .videos__title{
         font-size: 3rem;
-        font-family: 'Work Sans', sans-serif;
+        font-weight: 400;
+        font-family: 'Josefin Sans', sans-serif;
         margin-top: 100px;
         
     }
+    
     .container_vd{
-        margin-left: 50px;
+        font-weight: 300;
+        font-family: 'Josefin Sans', sans-serif;
         
     }
+
+    .lead-adjust{
+        font-size: 20px;
+    }
+
 
 
     
@@ -312,7 +338,8 @@ img{
     
     .videos__title{
         font-size: 3rem;
-        font-family: 'Work Sans', sans-serif;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
         margin-top: 200px;
     }
     
@@ -323,6 +350,13 @@ img{
     
     .container_vd{
         margin-left: 80px;
+        font-weight: 300;
+        font-family: 'Josefin Sans', sans-serif;
+        
+    }
+
+    .lead-adjust{
+        font-size: 20px;
     }
 
     .yt{
@@ -346,6 +380,11 @@ img{
         padding: 20px;
         height: 350px;
         margin-bottom: 40px;
+    }
+    .container_vd{
+        font-weight: 300;
+        font-family: 'Josefin Sans', sans-serif;
+        
     }
 }
 
